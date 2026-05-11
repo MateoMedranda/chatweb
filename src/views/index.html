@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/chat.css">
     <title>ESPE CHAT</title>
 </head>
 <body>
-    <h1>ESPE CHAT</h1>
+    <header class="header">
+        <h1>ESPEchat</h1>
+    </header>
+    <main>
+        <div id="all-messages">
+            <div class="message">
+                <div class="image-container">
+                    <img src="/img/logo.png" width="50px" alt="User Image">
+                </div>
+                <div class="message-body">
+                    <div class="user-info">
+                        <span class="username">John Doe</span>
+                        <span class="timestamp">10:00 AM</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum debitis culpa eos hic nemo molestias, incidunt voluptas aliquam at assumenda repudiandae, asperiores ex ipsa consectetur dolore iure praesentium ab? Voluptatibus?</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="image-container">
+                    <img src="/img/logo.png" width="50px" alt="User Image">
+                </div>
+                <div class="message-body">
+                    <div class="user-info">
+                        <span class="username">John Doe</span>
+                        <span class="timestamp">10:00 AM</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum debitis culpa eos hic nemo molestias, incidunt voluptas aliquam at assumenda repudiandae, asperiores ex ipsa consectetur dolore iure praesentium ab? Voluptatibus?</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="image-container">
+                    <img src="/img/logo.png" width="50px" alt="User Image">
+                </div>
+                <div class="message-body">
+                    <div class="user-info">
+                        <span class="username">John Doe</span>
+                        <span class="timestamp">10:00 AM</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum debitis culpa eos hic nemo molestias, incidunt voluptas aliquam at assumenda repudiandae, asperiores ex ipsa consectetur dolore iure praesentium ab? Voluptatibus?</p>
+                </div>
+            </div>
+        </div>
+        <div class="send-messages">
+            <input type="text" id="message" placeholder="Escribe tu mensaje...">
+            <button id="send-button" class="btn secondary">Enviar</button>
+        </div>
+    </main>
     <p>Bienvenido al chat de ESPE! la aplicación de chat en tiempo real</p>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/script.js"></script>
