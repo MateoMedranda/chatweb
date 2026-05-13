@@ -6,13 +6,17 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff; /* Fondo blanco institucional */
+  background-color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background: #006633; /* Verde institucional */
-  color: #ffffff; /* Texto blanco */
-  padding: 7px;
+  background: #673ab7; /* Morado MatChat */
+  color: #ffffff;
+  padding: 10px;
   text-align: center;
   font-weight: bold;
 }
@@ -65,18 +69,18 @@ button:not(:disabled) {
 
 .primary {
   --btn-color: #ffffff;
-  --btn-bg: #006633; /* Verde institucional */
-  --btn-border-color: #006633;
-  --btn-hover-color: #000000;
-  --btn-hover-bg: #ffd700; /* Amarillo institucional */
-  --btn-hover-border-color: #ffd700;
-  --btn-focus-shadow-rgb: 0, 102, 51; /* Verde institucional en sombra */
+  --btn-bg: #673ab7; /* Morado MatChat */
+  --btn-border-color: #673ab7;
+  --btn-hover-color: #ffffff;
+  --btn-hover-bg: #512da8; /* Morado oscuro al hover */
+  --btn-hover-border-color: #512da8;
+  --btn-focus-shadow-rgb: 103, 58, 183;
   --btn-active-color: #ffffff;
-  --btn-active-bg: #004422; /* Verde más oscuro para activo */
-  --btn-active-border-color: #004422;
+  --btn-active-bg: #4527a0;
+  --btn-active-border-color: #4527a0;
   --btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --btn-disabled-color: #ffffff;
-  --btn-disabled-bg: #cccccc; /* Gris para deshabilitado */
+  --btn-disabled-bg: #cccccc;
   --btn-disabled-border-color: #cccccc;
 }
 
@@ -86,7 +90,7 @@ button:not(:disabled) {
 }
 
 .input-group input {
-  border: 1px solid #006633; /* Verde institucional */
+  border: 1px solid #673ab7;
   outline: none;
   padding: 10px;
   border-radius: 3px;
@@ -97,6 +101,6 @@ button:not(:disabled) {
     0 0 4px 0 rgb(0 0 0 / 8%),
     0 2px 4px 0 rgb(0 0 0 / 12%);
   border-radius: 3px;
-  background: #ffffff; /* Fondo blanco institucional */
-  border: 1px solid #006633; /* Borde verde institucional */
+  background: #ffffff;
+  border: 1px solid #673ab7;
 }

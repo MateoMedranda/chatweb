@@ -14,12 +14,14 @@ module.exports = httpServer =>{
 
         socket.on("typing", (typing) =>{
             if(typing){
-                console.log("Alguien esta escribiendo...");
                 const cookie = socket.request.headers.cookie;
                 const username = cookie.split("=").pop();
-                socket.broadcast.emit("typing", true);
+                socket.broadcast.emit("typing", username);
             }
-            
+        });
+
+        socket.on("stop_typing", () => {
+            socket.broadcast.emit("stop_typing");
         });
     });
 }

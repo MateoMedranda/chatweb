@@ -1,10 +1,11 @@
-const login = document.getElementById("login");
+const form = document.querySelector("form");
 
-login.addEventListener("click", () =>{
-    const user = document.getElementById("username").value;
-    if(username != ""){
-        document.cookie = `username=${user}`;
-        navigation.href = "/";
+form.addEventListener("submit", (e) =>{
+    e.preventDefault();
+    const user = document.getElementById("username").value.trim();
+    if(user !== ""){
+        document.cookie = `username=${user}; path=/`;
+        window.location.href = "/";
     }else{
         alert("Ingrese un nombre de usuario");
     }

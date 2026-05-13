@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/chat.css">
-    <title>ESPE CHAT</title>
+    <title>MatChat</title>
 </head>
 <body>
     <header class="header">
-        <h1>ESPEchat</h1>
+        <h1>MatChat</h1>
     </header>
-    <main>
+    <main class="chat-main">
         <div id="all-messages">
             
         </div>
-        <div id="typing-indicator">
-
-        </div>
+        <div id="typing-indicator"></div>
         <div class="send-message">
             <input type="text" id="message" placeholder="Escribe tu mensaje...">
             <button id="send-button" class="btn secondary">Enviar</button>
         </div>
     </main>
-    <p>Bienvenido al chat de ESPE! la aplicación de chat en tiempo real</p>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/script.js"></script>
 </body>
